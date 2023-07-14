@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background-color: #f1f1f2;
+  background-color: white;
   font-family: "Libre Baskerville", serif;
   line-height: 25px;
   position: absolute;
@@ -17,7 +17,7 @@ body {
 .header-container {
   position: fixed;
   top: 0;
-  background-color: white;
+  background-color: #f1f1f2;
   height: 100px;
   width: 100%;
   padding: 0 60px;
@@ -148,7 +148,120 @@ body {
 }
 
 /** Section-two - about us **/
-/* .about-container {
+.about-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-} */
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: minmax(150px, auto);
+	align-items: space-evenly;
+	justify-items: center;
+	padding: 0 60px 60px;
+	/* background-color: #616161; */
+	margin: 10px 80px;
+
+}
+
+.grid-item-1 {
+	grid-column: span 3;
+}
+
+.about-items {
+	width: 80%;
+	line-height: 20px;
+}
+
+.about-items h3 {
+	margin-bottom: 10px;
+}
+
+.about-items p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 15px;
+}
+
+.premium-quality-img {
+	width: 150px;
+}
+
+.grid-item-1 {
+	margin: 50px;
+	font-weight: 900;
+	font-size: 20px;
+}
+
+.grid-item-3 img {
+	width: 235px;
+}
+
+.grid-item-4 img {
+	width: 165px;
+}
+
+.grid-item-4 {
+	text-align: center;
+}
+
+.grid-item-4 h3, .grid-item-4 p {
+	text-align: left;
+}
+
+/** Section-three - shop **/
+.shop {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 60px;
+	/* padding: 10px; */
+}
+
+.shop:hover {
+	margin: 40px;
+	justify-content: space-evenly;
+}
+
+.shop-items {
+	background-color: #4d4b4b;
+	color: rgb(216, 213, 213);
+	padding: 30px;
+	min-width: 19%;
+	min-height: 390px;
+	padding-top: 50px;
+}
+
+.shop-items:hover {
+	transform: scale(1.1);
+	margin: 20px;
+}
+
+.shop-items span {
+	display: block;
+}
+
+.shop-items img {
+	width: 200px;
+}
+
+.shop-items .shop-items-spec {
+	font-size: 13px;
+}
+
+.shop-items h3 {
+	font-size: 13px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.item-1 img {
+	width: 165px;
+}
+
+.item-2 img {
+	width: 165px;
+}
+
+.item-3 img {
+	width: 125px;
+}
+
+.item-5 img {
+	width: 165px;
+}
