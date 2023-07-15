@@ -470,6 +470,10 @@ hr {
   left: 10px;
 }
 
+label span:hover {
+  cursor: pointer;
+}
+
 .lower-container {
   display: flex;
   align-items: center;
@@ -502,4 +506,150 @@ hr {
 .social-media div img {
   width: 20px;
   height: 20px;
+}
+
+
+/* Tablet view - 1024px */
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+  
+  .header-container {
+    height: 50px;
+    width: 100vw;
+    padding: 0 60px 20px;
+  }
+
+  .logo {
+    margin: 20px 10px;
+    font-size: 20px;
+  }
+
+  .nav-list-items ul {
+    display: none;
+  }
+
+  .nav-icons {
+    display: none;
+  }
+
+  /** Section-one - home **/
+
+.home {
+  background: linear-gradient(to left top, #7dd56f, #28b487);
+  margin: 180px 80px 20px;
+  display: flex;
+  padding: 50px 10px;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.left,
+.right {
+  width: 40%;
+  color: rgb(1, 10, 4);
+}
+
+.home-img-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.right > img {
+  width: 250px;
+}
+
+.right > .arrow {
+  width: 40px;
+  margin-bottom: 90px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.home > .left > p {
+  color: #f7f7f7;
+}
+
+.home > .left > .shop-btn {
+  color: white;
+  background-color: rgba(125, 213, 111, 0.8);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-size: 17px;
+  box-shadow: black 3px 1px;
+  transition: 0.4s;
+}
+
+.home > .left > .shop-btn:hover {
+  background-color: rgba(125, 213, 111, 0.5);
+  cursor: pointer;
+}
+
+.home > .left > .shop-btn:active {
+  box-shadow: none;
+}
+
+/** Section-two - about us **/
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  align-items: space-evenly;
+  justify-items: center;
+  padding: 0 60px 60px;
+  /* background-color: #616161; */
+  margin: 10px 80px;
+}
+
+.grid-item-1 {
+  grid-column: span 3;
+}
+
+.about-items {
+  width: 80%;
+  line-height: 20px;
+}
+
+.about-items h3 {
+  margin-bottom: 10px;
+}
+
+.about-items p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.premium-quality-img {
+  width: 150px;
+}
+
+.grid-item-1 {
+  margin: 50px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.grid-item-3 img {
+  width: 235px;
+}
+
+.grid-item-4 img {
+  width: 165px;
+}
+
+.grid-item-4 {
+  text-align: center;
+}
+
+.grid-item-4 h3,
+.grid-item-4 p {
+  text-align: left;
+}
+  
 }
