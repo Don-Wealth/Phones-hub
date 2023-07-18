@@ -516,6 +516,7 @@ label span:hover {
     gap: 70px;
     align-items: center;
     justify-content: center;
+    margin: 10px auto;
   }
 
   .left {
