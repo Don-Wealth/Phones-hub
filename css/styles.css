@@ -604,6 +604,7 @@ label span:hover {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    width: 90%;
     border-radius: 30px;
   }
 
@@ -613,7 +614,7 @@ label span:hover {
   }
 
   .faq-container {
-    width: 90%;
+    width: 100%;
     margin: 20px auto;
   }
 
@@ -623,14 +624,21 @@ label span:hover {
 
   .faq-container div {
     width: 100%;
+    text-align: center;
+  }
+
+  .faq-container hr {
+    width: 100%;
   }
 
   .faq-container div .what {
     margin-right: 0;
     text-align: center;
+    font-size: 0.7em;
   }
 
   .faq-container div select {
+    /* display: none; */
     margin-left: 0;
     width: 100%;
   }
