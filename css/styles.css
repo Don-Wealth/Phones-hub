@@ -5,7 +5,6 @@
 }
 
 body {
-  width: 100vw;
   height: 100vh;
   background-color: white;
   font-family: "Libre Baskerville", serif;
@@ -509,6 +508,9 @@ label span:hover {
 }
 
 @media screen and (max-width:400px) {
+  body {
+    width: 100vw;
+  }
   .nav-list-items, .nav-icons {
     display: none;
   }
@@ -533,6 +535,10 @@ label span:hover {
     flex-direction: column;
   }
 
+  .about-items img {
+    width: 100px;
+  }
+
   .customers-review-container{
     display: flex;
     flex-direction: column;
@@ -555,6 +561,9 @@ label span:hover {
     margin-left: 0px;
   }
   
+  .footer-container {
+    width: 100vw;
+  }
 
   .upper-container {
     flex-direction: column;
