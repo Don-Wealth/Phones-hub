@@ -507,7 +507,7 @@ label span:hover {
   height: 20px;
 }
 
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 375px) {
   .header-container {
     padding: 0 20px;
   }
@@ -633,14 +633,18 @@ label span:hover {
 
   .faq-container div .what {
     margin-right: 0;
-    text-align: center;
+    text-align: left;
     font-size: 0.7em;
   }
 
   .faq-container div select {
-    /* display: none; */
     margin-left: 0;
     width: 100%;
+    background-color: white;
+  }
+
+  .faq-container div select:focus {
+    outline: none;
   }
 
   .footer-container {
