@@ -1,101 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\styles.css" />
+    <link rel="shortcut icon" href="images/LOGO/logo.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Phones Hub</title>
+  </head>
+  <body>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css\styles.css">
-		<link rel="shortcut icon" href="images\logo\logo.jpg" type="image/x-icon">
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders+Inline+Display:wght@100;200;300;400;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-		</style>
-		<title>Phones Hub</title>
-	</head>
+    <header>
+      <nav class="header-container">
+        <a href="#" class="logo">PHONESHUB</a>
+        <div class="menu-bar" onclick="myFunction()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="nav-list-items">
+          <ul>
+            <li class="nav-list"><a href="#home">Home</a></li>
+            <li class="nav-list"><a href="#about">About us</a></li>
+            <li class="nav-list"><a href="#shop">Shop</a></li>
+            <li class="nav-list"><a href="#contact">Contact</a></li>
+            <li class="nav-list"><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="nav-icons">
+          <li class="nav-list"><i class="fa fa-search" aria-hidden="true"></i></li>
+          <li class="nav-list"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+          <li class="nav-list"><i class="fa fa-user-circle" aria-hidden="true"></i></li>
+        </div>
+      </nav>
+    </header>
+	
+    <main>
+      <section class="home" id="home">
+        <div class="left">
+          <h2>Unbeatable Deals for Every Budget We have Got at our Store</h2>
+          <p>
+            We bring you the latest smartphones from the industry's leading
+            brands. We offer a wide range of options to suit every budget.
+            Whether you are looking for a flagship model or a budget-friendly
+            smartphone, we have the perfect device for you.
+          </p>
+          <h1>Unleash Your Potential with the Latest Tech at PhonesHub</h1>
+          <div class="shop-btn">Shop With Us Today</div>
+        </div>
+        <div class="home-img-container right">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256 366.3 387.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z"/></svg>
+          <!-- <img
+            src="images/less-than-solid.svg"
+            alt=""
+            class="arrow less-than"
+          /> -->
+          <img src="images/PHONES.png" alt="" />
+          <!-- <img
+            src="images/greater-than-solid.svg"
+            alt=""
+            class="arrow greater-than"
+          /> -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z"/></svg>
+        </div>
+      </section>
 
-	<body>
-		<nav>
-			<div class="container">
-				<a href="#" id="brand">PHONESHUB</a>
-				<button class="top-button">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
+      <section class="reasons" id="reasons">
+        <h2 class="reasons_title">Why You Should Choose PhonesHub</h2>
+        <div class="labels">
+            <div>
+              <img src="images/premium_quality_label.png" alt="Premium Quality Label">
+              <h3 class="labels_title">Quality products that beats your imagination</h3>
+              <p class="label_text">Get top-notch phones and phone accessories from us with a 1 year warranty</p>
+            </div>
+            <div>
+              <img src="images/phone1.png" alt="Premium Quality Label">
+              <h3 class="labels_title">Latest Models of Phones and Accessories</h3>
+              <p class="label_text">With our regular store stocking,you can be sure to get the latest products of you choice</p>
+            </div>
+            <div>
+              <img src="images/black_friday_sales.png" alt="Premium Quality Label">
+              <h3 class="labels_title">Awoof Sales During Black Fridays</h3>
+              <p class="label_text">Don’t miss our discount sales during black fridays. Get products without breaking a bank</p>
+            </div>
+        </div>
+    </section>
 
-				<ul class="navbar-menu">
-					<li>Home</li>
-					<li>About us</li>
-					<li>Shop</li>
-					<li>Contact</li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li>
-						<span><img src="images\carbon_search.png" alt=""></span>
-						<span><img src="images\bi_cart.png" class="icon" alt=""></span>
-						<span><img src="images\iconamoon_profile-circle-light.png" class="icon" alt=""></span>
-					</li>
-				</ul>
-			</div>
+      <section id="shop">
+        <h2>Collections</h2>
+        <div class="shop-items-container shop">
+          <div class="shop-items item-1">
+            <div class="shop-img-container">
+              <img src="images/iphone14_promax.png" alt="" />
+            </div>
+            <h3>Apple iphone 14 Pro Max</h3>
+            <h3 class="price">(#920,000)</h3>
+            <span class="shop-items-spec">4323mAh battery</span>
+            <span class="shop-items-spec">128GB/256GB/512GB/1TB</span>
+            <span class="shop-items-spec">12 months warranty</span>
+          </div>
+          <div class="shop-items item-2">
+            <div class="shop-img-container">
+              <img src="images/poco_m4g.png" alt="" />
+            </div>
+            <h3>Xiaomi Poco M4 Pro 5G</h3>
+            <h3 class="price">(#118,000)</h3>
+            <span class="shop-items-spec">5000mAh battery</span>
+            <span class="shop-items-spec">128GB/64GB</span>
+            <span class="shop-items-spec">12 months warranty</span>
+          </div>
+          <div class="shop-items item-3">
+            <div class="shop-img-container">
+              <img src="images/realme-gt-neo5.png" alt="" />
+            </div>
+            <h3>Realme GT Neo 6</h3>
+            <h3 class="price">(#154,800)</h3>
+            <span class="shop-items-spec">5000 Li-Po battery</span>
+            <span class="shop-items-spec">128GB/256GB</span>
+            <span class="shop-items-spec">12 months warranty</span>
+          </div>
+          <div class="shop-items item-4">
+            <div class="shop-img-container">
+              <img src="images/samsungGalaxy_a53.png" alt="" />
+            </div>
+            <h3>Samsung Galaxy A53 5G</h3>
+            <h3 class="price">(#183,000)</h3>
+            <span class="shop-items-spec">5000 Li-Po battery</span>
+            <span class="shop-items-spec">128GB/256GB</span>
+            <span class="shop-items-spec">12 months warranty</span>
+          </div>
+          <div class="shop-items item-5">
+            <div class="shop-img-container">
+              <img src="images/redminote11S.png" alt="" />
+            </div>
+            <h3>Redmi Note 11S</h3>
+            <h3 class="price">(#175,000)</h3>
+            <span class="shop-items-spec">5000 mAh battery</span>
+            <span class="shop-items-spec">128GB/256GB</span>
+            <span class="shop-items-spec">12 months warranty</span>
+          </div>
+        </div>
+      </section>
+      <section class="review" id="review">
+        <h2>CUSTOMER'S REVIEWS</h2>
+        <div class="customers-review-container">
+          <div class="customer-review">
+            <div>
+              <img src="images/Ellipse 1.png" alt="" />
+            </div>
+            <div>
+              <h3>DANNY ALBERT</h3>
+              <p>
+                I've been using phoneshub for quite some time now and their
+                service is wonderful
+              </p>
+            </div>
+          </div>
+          <div class="customer-review">
+            <img src="images/Ellipse 2.png" alt="" />
+            <div>
+              <h3>MORENIKE ADEGBITE</h3>
+              <p>
+                Got a phone for my mum a few years ago and their customer
+                service can't be found anywhere else.
+              </p>
+            </div>
+          </div>
+          <div class="customer-review">
+            <img src="images/Ellipse 3.png" alt="" />
+            <div>
+              <h3>ELIJAH ETIM</h3>
+              <p>
+                The quality of products they sell and the service they deliver
+                make me love and recommend them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		</nav>
-		<div>
-			<div class="top-container">
-				<div class="upper-column">
-					<h4>Unbeatable Deals for Every Budget We’ve Got at our Store</h4>
-					<p>We bring you the latest smartphones from the industry’s leading brands. We offer a wide range of
-						options to suit every budget. Whether you are looking
-						for a flagship model or a budget-friendly smartphone,we have the perfect device for you.</p>
-					<h3>Unleash Your Potential with the Latest Tech at PhonesHub.</h3>
-				</div>
-				<div class="top-img">
-					<span class="arrow left"><img src="images\left-arrow.png" alt=""></span>
-					<img src="images\PHONES-removebg-preview 1.png" alt="">
-					<span class="arrow left"><img src="images\right-arrow.png" alt=""></span>
-				</div>
-				<div class="top-container-button">
-					<button>Shop with us Today!</button>
-				</div>
-			</div>
+      <section class="faq" id="faq">
+        <div class="faq-container">
+          <h2>FREQUENTLY ASKED QUESTIONS ABOUT US</h2>
+          <div>
+            <p class="what">What is PhonesHub?</p>
+            <select name="what" id="one"></select>
+          </div>
+          <hr />
+          <div>
+            <p class="what">Are the products sold in PhonesHub under warranty?</p>
+            <select name="what" id="two"></select>
+          </div>
+          <hr />
+          <div>
+            <p class="what">How many years warranty do products have?</p>
+            <select name="what" id="three"></select>
+          </div>
+          <hr />
+          <div>
+            <p class="what">How do I place an order?</p>
+            <select name="what" id="four">Name</select>
+          </div>
+          <hr />
+        </div>
+      </section>
+    </main>
 
-		</div>
+    <footer id="contact">
+      <div class="footer-container">
+        <div class="upper-container">
+          <div class="subscribe">
+            <h3>Subscribe to Our Newsletter:</h3>
+            <span>
+              Be the first to know about our latest product and updates
+              concerning the phone world.
+            </span>
+          </div>
+          <div class="input-field">
+            <i class="fa fa-envelope-o" aria-hidden="true"> </i>
+            <input type="email" name="" id="email" placeholder= "Email..." >
+            <input type="submit" value="Subscribe" id="submit">
+          </div>
+        </div>
+        <div class="lower-container">
+          <div class="contact">
+            <h3>Contact Information:</h3>
+            <div class="phone-no">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span> +2348000800000</span>
+            </div>
+            <div class="email-address">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <span class="email">info.phoneshub@gmail.com</span>
+            </div>
+            <div class="address">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>6,Oba Crescent, Ikotun.</span>
+            </div>
+          </div>
+          <div class="policy">
+            <h3>Policies:</h3>
+            <p><a href="#">Privacy Policy</a></p>
+		        <p><a href="#">Terms of Service</a></p>
+          </div>
+          <div class="social-media contact">
+            <h3>Follow us on:</h3>
+            <div class="twitter">
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <span>phoneshub@twitter.com</span>
+              </a>
+            </div>
+            <div class="instagram">
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <span>phoneshub@instagram.com</span>
+              </a>
+            </div>
+            <div class="facebook">
+              <a href="#">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <span>phoneshub@facebook.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-		<div class="second-container">
-			<div class="topic">
-				<h3>
-					Why You Should Choose PhonesHub
-				</h3>
-			</div>
-			<div class="inner-container">
-				<div class="vector1 vector"><img src="images\premium_quality_label-removebg-preview 1.png" alt="">
-					<span>
-						<h3>Quality products that beats your imagination.</h3>
-					</span>
-					<span>
-						<p>Get top-notch phones and phone accessories from us with a 1 year warranty</p>
-					</span>
-				</div>
-				<div class="vector2 vector">
-					<img src="images\6070873_3105004-removebg-preview 1.png" alt="">
-					<span>
-						<h3>Latest Models of Phones and Accessories</h3>
-					</span>
-					<span>
-						<p>With our regular store stocking,you can be sure to get the latest products of you choice</p>
-					</span>
-				</div>
-				<div class="vector3 vector">
-					<img src="images\black_friday_sales-removebg-preview 1.png" alt="">
-					<span>
-						<h3>Awoof Sales During Black Fridays</h3>
-					</span>
-					<span>
-						<p>Don’t miss our discount sales during black fridays. Get products without breaking a bank</p>
-					</span>
-				</div>
-			</div>
-
-		</div>
-	</body>
-
+  </body>
 </html>
